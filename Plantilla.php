@@ -5,7 +5,14 @@
 </head>
 <body>
 	<?php
-	echo "Hello World";
+		$con = mysqli_connect("localhost","root","","epic");
+
+	if (mysqli_connect_errno($con)) {
+		echo "Error";
+	}
+	else{
+		echo "Buena";
+	}
 	?>
 </body>
 </html>
